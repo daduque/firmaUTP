@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
 
             <span style="display: block; margin-top: 6px; margin-left: 10px;">
-                +57 (6) 3137300
+                +57 606 3137300
             </span>
             
         </div>
