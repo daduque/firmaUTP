@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
                         style="font-weight:700">${ dataFirma.elements[4].value }</span>&nbsp;/ Of:&nbsp;<span
                         style="font-weight:700">${ dataFirma.elements[4].value } - ${ dataFirma.elements[5].value }</span></div>
                 <div>
-                    <a style="color:#003d6d" class="enlace-institucional" href="${ dataFirma.elements[6].value }" target="_blank">${ dataFirma.elements[6].value }</a>
+                    <a style="color:#003d6d" class="enlace-institucional" href="mailto:${ dataFirma.elements[6].value }" target="_blank">${ dataFirma.elements[6].value }</a>
                 </div>
             </div>
         </div>
