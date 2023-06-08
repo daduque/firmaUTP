@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
         <div style="padding-left:10px;color:black;font-family:Helvetica;font-size:14px; width:400px">
             <div style="font-weight: bold;"> ${ dataFirma.elements[0].value.toUpperCase() } </div>
             <div style="font-family:Helvetica">
-                <div style="min-width:328px"> ${ dataFirma.elements[1].value } </div>
+                <div style="min-width:328px"> ${ dataFirma.elements[1].value.toLowerCase().replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase()))) } </div>
                 <div style="font-style:italic;font-weight:bold">${ dataFirma.elements[2].value }</div>
                 <div>Ext:&nbsp;<span style="font-weight:700">${ dataFirma.elements[3].value }</span>&nbsp;/ Edificio Nº&nbsp;<span
                         style="font-weight:700">${ dataFirma.elements[4].value }</span>&nbsp;/ Of:&nbsp;<span
