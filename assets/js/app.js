@@ -1,13 +1,16 @@
 document.addEventListener('DOMContentLoaded', (e) => {
 
+    //Capturar el botón de copiar
     const btnCopiar = document.getElementById('btnCopiar');    
+    //Capturar el formulario de la firma
     const dataFirma = document.getElementById('dataFirma');
+    //capturar la sección de la firma
+    const firma = document.getElementById('firma');
     
     dataFirma.addEventListener('submit', (e) => {
         e.preventDefault();
 
-         //capturar la sección de la firma
-        const firma = document.getElementById('firma');
+        
         firma.innerHTML = `
         <div  style="align-content: center; align-items: center; display: flex; flex-wrap: wrap; width: 550px;">
                         
@@ -131,7 +134,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
         e.preventDefault();
         console.log('Copiar');
 
-        const firma = document.getElementById('firma');
+        // const firma = document.getElementById('firma');
         const range = document.createRange();
         range.selectNode(firma);
         window.getSelection().addRange(range);
