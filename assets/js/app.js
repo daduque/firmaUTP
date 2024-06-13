@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
                         <div style="width: 500px; display: inline-block; margin-top: 5px;">
     
-                            <div style="display: inline-block; height: 22px; margin-top: 0; vertical-align: middle; width: 185px;">
+                            <div style="display: inline-block; height: 22px; margin-top: 0; vertical-align: middle; width: 210px;">
                         
                                 <!-- Web -->
                                 <a target="_blank" style="display:inline-block; color:white; margin-right: 5px; vertical-align: middle;" href="https://www.utp.edu.co">
