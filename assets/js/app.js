@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
                         font-family:Helvetica; 
                         font-size:14px; 
                         height: 32px; 
-                        padding-left:10px;
+                        padding-left:5px;
                         width: 500px;">
 
                         <div style="width: 500px; display: inline-block; margin-top: 5px;">
@@ -111,9 +111,9 @@ document.addEventListener('DOMContentLoaded', (e) => {
                             </div>
                             
                             <!-- @utp -->
-                            <div style="display: inline-block; width: 120px;">
+                            <div style="display: inline-block; width: 114px;">
                                 
-                                <span style="display: inline-block; font-weight: bold; margin-left: 10px;">
+                                <span style="display: inline-block; font-weight: bold; margin-left: 5px;">
                                     @UTPereira
                                 </span>
                             </div>
