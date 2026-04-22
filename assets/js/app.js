@@ -6,6 +6,43 @@ document.addEventListener('DOMContentLoaded', (e) => {
     const dataFirma = document.getElementById('dataFirma');
     //capturar la sección de la firma
     const firma = document.getElementById('firma');
+
+    //capturar el checkbox
+    const confirmo = document.getElementById('confirmo');
+    //capturar el botón generar
+    const generar = document.getElementById('generar');
+
+    if(confirmo.checked) {
+        generar.disabled = false;
+    } else {
+        generar.disabled = true;
+    }
+
+    confirmo.addEventListener('change', (e) => {
+        if(confirmo.checked) {
+            generar.disabled = false;
+        } else {
+            generar.disabled = true;
+        }
+    });
+
+    const capitalizarTitulo = (str) => {
+        // 1. Lista de conectores a ignorar
+        const conectores = ['de', 'la', 'el', 'y', 'en', 'a', 'con', 'para', 'un', 'una', 'su', 'al'];
+
+        return str
+            .toLowerCase() // Convertir todo a minúsculas primero
+            .split(' ')    // Separar en palabras
+            .map((word, index) => {
+            // Capitalizar si no es conector O si es la primera palabra
+            if (index === 0 || !conectores.includes(word)) {
+                return word.charAt(0).toUpperCase() + word.slice(1);
+            }
+            // Devolver conector en minúscula
+            return word;
+            })
+            .join(' '); // Unir de nuevo
+    }
     
     dataFirma.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -31,7 +68,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
                         </tr>
                         <tr>
                             <td>
-                                <div style="min-width:328px"> ${ dataFirma.elements[1].value.toLowerCase().replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase()))) } </div>
+                                <div style="min-width:328px"> ${ capitalizarTitulo(dataFirma.elements[1].value.toLowerCase().replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())))) } </div>
                             </td>
                         </tr>
                         <tr>
@@ -41,7 +78,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
                         </tr>
                         <tr>
                             <td>
-                                <div>Ext:&nbsp;<span style="font-weight:700"> ${ dataFirma.elements[3].value }  </span>&nbsp;/ Edificio Nº&nbsp;<span style="font-weight:700"> ${ dataFirma.elements[4].value }  </span>&nbsp;/ Of:&nbsp;<span style="font-weight:700"> ${ dataFirma.elements[4].value }  - ${ dataFirma.elements[5].value }  </span></div>
+                                <div>Ext:&nbsp;<span style="font-weight:700"> ${ dataFirma.elements[3].value }  </span>&nbsp;/ Edificio Nº&nbsp;<span style="font-weight:700"> ${ capitalizarTitulo(dataFirma.elements[4].value) }  </span>&nbsp;/ Of:&nbsp;<span style="font-weight:700"> ${  (dataFirma.elements[4].value).length < 4 ? dataFirma.elements[4].value + '-' : '' } ${ dataFirma.elements[5].value }  </span></div>
                             </td>
                         </tr>
                         <tr>
