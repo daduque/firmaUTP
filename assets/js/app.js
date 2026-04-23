@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
         }
     });
 
+
     const capitalizarTitulo = (str) => {
         // 1. Lista de conectores a ignorar
         const conectores = ['de', 'la', 'el', 'y', 'en', 'a', 'con', 'para', 'un', 'una', 'su', 'al'];
@@ -53,12 +54,14 @@ document.addEventListener('DOMContentLoaded', (e) => {
         <div>
         <table>
             <tr>
-                <td style="width: 120px;">
+                <td style="width: 125px;">
                     <img style="display:inline-block;margin: 0; vertical-align: middle;" class="utp-azul" src="https://media2.utp.edu.co/imagenes/logo-utp-azul-noborder.png" width="120" alt="Marca utp azul">
                 </td>
+                <!--
                 <td style="width: 6px;">
-                    <img src="https://ci5.googleusercontent.com/proxy/lvLIP8ep_ETbuzCBauiedvVf4W4EfCAam8aGqTXHQkdJ3Z_3825utYAY8ymjcHzyRopVe3-61qPWM5CMOtXCrwsBh4PZjzuLQZ61tcjx_ej033cQ86kmTA=s0-d-e1-ft#https://media.utp.edu.co/firma_digital/images/VicerrectoriasLinea.png" style="border:0px none;vertical-align:middle" class="CToWUd" data-bit="iit" width="2px" height="110px">
+                    <img src="../images/linea_vrtcl.png" style="border:0px none;vertical-align:middle" class="CToWUd" data-bit="iit" width="2px" height="110px">
                 </td>
+                -->
                 <td style="width: 355px;">
                     <table style="color:black; display:table-cell; font-family:Helvetica;font-size:14px; line-height: 15px; margin:0; vertical-align: middle; width: 355px">
                         <tr>
