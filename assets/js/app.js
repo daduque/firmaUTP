@@ -78,7 +78,10 @@ document.addEventListener('DOMContentLoaded', (e) => {
                         </tr>
                         <tr>
                             <td>
-                                <div>Ext:&nbsp;<span style="font-weight:700"> ${ dataFirma.elements[3].value }  </span>&nbsp;/ Edificio Nº&nbsp;<span style="font-weight:700"> ${ capitalizarTitulo(dataFirma.elements[4].value) }  </span>&nbsp;/ Of:&nbsp;<span style="font-weight:700"> ${  (dataFirma.elements[4].value).length < 4 ? dataFirma.elements[4].value + '-' : '' } ${ dataFirma.elements[5].value }  </span></div>
+                                <div>Ext:&nbsp;<span style="font-weight:700"> ${ dataFirma.elements[3].value }  </span>
+                                &nbsp;/ Edificio Nº&nbsp;<span style="font-weight:700"> ${  (dataFirma.elements[4].value).length < 4 ? dataFirma.elements[4].value + ' -' : '' }  </span>
+                                &nbsp;/ Of:&nbsp;<span style="font-weight:700"> ${  (dataFirma.elements[4].value).length < 4 ? dataFirma.elements[4].value + ' -' : '' } ${ dataFirma.elements[5].value }  </span>
+                                </div>
                             </td>
                         </tr>
                         <tr>
