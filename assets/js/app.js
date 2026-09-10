@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
         firma.innerHTML = `
         <!-- Bloque texto y barra azul -->
         <div>
-        <table>
+        <table style="background-color: white;">
             <tr>
                 <td style="width: 125px;">
                     <img style="display:inline-block;margin: 0; vertical-align: middle;" class="utp-azul" src="https://media2.utp.edu.co/imagenes/logo-utp-azul-noborder.png" width="120" alt="Marca utp azul">
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
                                 </div>
                                 <div style="display: inline-block; height: 18px; vertical-align: middle;">
                                     
-                                    <span style="display: inline-block; margin-left: 5px;">
+                                    <span style="display: inline-block; margin-left: 5px; color:white; font-weight: bold;">
                                         +57 606 3137300
                                     </span>
                                     
@@ -154,9 +154,9 @@ document.addEventListener('DOMContentLoaded', (e) => {
                             </div>
                             
                             <!-- @utp -->
-                            <div style="display: inline-block; width: 114px;">
+                            <div style="display: inline-block; width: 94px;">
                                 
-                                <span style="display: inline-block; font-weight: bold; margin-left: 5px;">
+                                <span style="display: inline-block; font-weight: bold;">
                                     @UTPereira
                                 </span>
                             </div>
